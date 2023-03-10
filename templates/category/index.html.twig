@@ -19,8 +19,8 @@
                 <td>{{ category.id }}</td>
                 <td>{{ category.name }}</td>
                 <td>
-                    <a href="{{ path('app_category_show', {'id': category.id}) }}">show</a>
-                    <a href="{{ path('app_category_edit', {'id': category.id}) }}">edit</a>
+                    <a href="{{ path('app_category_show', {'id': category.id}) }}"><button class="button">show</button></a>
+                    <a href="{{ path('app_category_edit', {'id': category.id}) }}"><button class="button">edit</button></a>
                 </td>
             </tr>
         {% else %}
@@ -31,5 +31,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_category_new') }}">Create new</a>
+    <a href="{{ path('app_category_new') }}"><button class="button">Add category</button></a>
 {% endblock %}
