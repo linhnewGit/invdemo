@@ -27,8 +27,8 @@
                 <td>{{ product.dueDate ? product.dueDate|date('Y-m-d') : '' }}</td>
                 <td>{{ product.category.name }}</td>
                 <td>
-                    <a href="{{ path('app_product_show', {'id': product.id}) }}">show</a>
-                    <a href="{{ path('app_product_edit', {'id': product.id}) }}">edit</a>
+                    <a href="{{ path('app_product_show', {'id': product.id}) }}"><button class="button">show</button></a>
+                    <a href="{{ path('app_product_edit', {'id': product.id}) }}"><button class="button">edit</button></a>
                 </td>
             </tr>
         {% else %}
@@ -40,5 +40,5 @@
     </table>
 
     
-    <a href="{{ path('app_product_new') }}">Create new</a>
+    <a href="{{ path('app_product_new') }}"><button class="button">Add product</button></a>
 {% endblock %}
